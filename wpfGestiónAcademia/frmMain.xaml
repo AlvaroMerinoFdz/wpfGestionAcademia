@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:wpfGestiónAcademia"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" Closing="Window_Closing"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
     <Grid x:Name="GridPrincipal">
         
     </Grid>

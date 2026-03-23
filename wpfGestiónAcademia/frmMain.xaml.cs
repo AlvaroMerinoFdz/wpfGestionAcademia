@@ -20,9 +20,6 @@ namespace wpfGestiónAcademia
     /// </summary>
     public partial class frmMain : Window
     {
-        /**
-         * 
-         */
         public frmMain()
         {
             InitializeComponent();
@@ -30,6 +27,11 @@ namespace wpfGestiónAcademia
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
         }
+
+        /**
+         * Método que calcular el tamaño de la pantalla y ajusta el tamaño de la ventana principal en consecuencia.
+         * Se establece el ancho y alto de la ventana como un porcentaje del tamaño de la pantalla para asegurar que se adapte a diferentes resoluciones y tamaños de pantalla.
+         */
         private void CalcularTamaño()
         {
             var screenWidth = SystemParameters.PrimaryScreenWidth;
@@ -40,13 +42,13 @@ namespace wpfGestiónAcademia
             double alto = screenHeight * 0.8;
 
             this.Width = ancho;
-            this.Height = alto;
-
-            
+            this.Height = alto; 
         }
 
         /**
-         * Este método se encarga de manejar el evento de clic en el menú "Salir". Muestra un cuadro de diálogo de confirmación para asegurarse de que el usuario desea cerrar la aplicación. Si el usuario confirma, la aplicación se cierra; de lo contrario, se muestra un mensaje de continuación.
+         * Este método se encarga de manejar el evento de clic en el menú "Salir".
+         * Muestra un cuadro de diálogo de confirmación para asegurarse de que el usuario desea cerrar la aplicación. 
+         * Si el usuario confirma, la aplicación se cierra.
          */
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
