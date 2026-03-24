@@ -63,5 +63,12 @@ namespace wpfGestiónAcademia
                 e.Cancel = true; //No cierra la aplicación
             }
         }
-    }
+
+        // Manejador para el evento Click del MenuItem definido en XAML (Click="Salir_Click")
+        private void Salir_Click(object sender, RoutedEventArgs e)
+        {
+            // Interpreto que el menú "Salir" debe cerrar la ventana; esto disparará Window_Closing para confirmar.
+            this.Close();
+        }
+        }
 }
