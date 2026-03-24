@@ -8,7 +8,15 @@
         Title="MainWindow" Height="600" Width="800" Closing="Window_Closing"
         WindowStartupLocation="CenterScreen"
         ResizeMode="CanMinimize">
+    
     <Grid x:Name="GridPrincipal">
-        
+        <Menu>
+            <MenuItem Header="_Opciones">
+                <MenuItem Header="_Abrir"/>
+                <MenuItem Header="Salir" Click="Salir_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Academia">
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
