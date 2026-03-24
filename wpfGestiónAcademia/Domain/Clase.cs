@@ -37,5 +37,13 @@ public class Clase
         _inscripciones.Add(inscripcion);
     }
 
+    public void CancelarInscripcion(Inscripcion inscripcion)
+    {
+        if ((Fecha - DateTime.Now).TotalHours < 24)
+            throw new Exception("No puedes cancelar con menos de 24h");
+
+        _inscripciones.Remove(inscripcion);
+    }
+
 
 }
